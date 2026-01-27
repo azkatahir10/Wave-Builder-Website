@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WA/E BUILDER INC | Premium Construction Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("YOUR_PUBLIC_KEY"); // You'll need to replace this with your actual EmailJS public key
+        })();
+    </script>
+</head>
+<body>
+    <!-- WhatsApp Button -->
+    <div class="whatsapp-btn" id="whatsappBtn">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <!-- Header with Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <img src="logo.jpg" alt="WA/E BUILDER INC" class="logo-img">
+            </div>
+            <ul class="nav-list">
+                <li><a href="#home" class="nav-link active">HOME</a></li>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#work" class="nav-link">WORK</a></li>
+                <li><a href="#services" class="nav-link">SERVICES</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="construction-elements">
+                <div class="element element-1"></div>
+                <div class="element element-2"></div>
+                <div class="element element-3"></div>
+                <div class="element element-4"></div>
+            </div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-logo-container">
+                    <!-- Logo image on the left -->
+                    <div class="logo-image-wrapper">
+                        <img src="logo.jpg" alt="WA/E BUILDER INC" class="hero-logo-img">
+                    </div>
+                    <div class="logo-text">
+                        <div class="logo-line"></div>
+                        <p class="logo-subtitle">PREMIUM CONSTRUCTION SOLUTIONS</p>
+                    </div>
+                </div>
+                
+                <div class="hero-text-container">
+                    <div class="hero-text">
+                        <h2 class="hero-title">STAND</h2>
+                        <h2 class="hero-title">OUT</h2>
+                    </div>
+                    
+                    <div class="hero-message">
+                        <p class="message-line">in a sea of ordinary.</p>
+                        <p class="message-line">make sure your construction</p>
+                        <p class="message-line">project is set apart</p>
+                        <p class="message-line">from the competition</p>
+                    </div>
+                    
+                    <div class="hero-cta">
+                        <a href="#contact" class="cta-btn">START YOUR PROJECT</a>
+                        <a href="#work" class="cta-btn secondary">VIEW OUR WORK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">About Us</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>WA/E BUILDER INC is a premier construction company specializing in both interior and exterior renovation and construction services. With over 18 years of experience, we've built a reputation for quality craftsmanship, attention to detail, and reliable service.</p>
+                    <p>Our team of skilled professionals is committed to transforming your vision into reality, whether it's a complete home renovation or a specific construction project.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>350+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>18+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Construction Team" class="about-img">
+                        <div class="image-overlay">
+                            <p>Building Excellence Since 2005</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work" id="work">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Our Work</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Showcasing our premium construction projects</p>
+            </div>
+            
+            <div class="work-grid">
+                <div class="work-card">
+                    <div class="work-card-image">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern Kitchen Renovation">
+                        <div class="work-category">INTERIOR</div>
+                    </div>
+                    <div class="work-card-content">
+                        <h3>Modern Kitchen Renovation</h3>
+                        <p>Complete kitchen remodeling with custom cabinets, high-end appliances, and premium finishes.</p>
+                    </div>
+                </div>
+                
+                <div class="work-card">
+                    <div class="work-card-image">
+                        <img src="https://images.unsplash.com/photo-1567538943357-8d5fa81b859f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Custom Deck & Patio">
+                        <div class="work-category">EXTERIOR</div>
+                    </div>
+                    <div class="work-card-content">
+                        <h3>Custom Deck & Patio</h3>
+                        <p>Outdoor living space with composite decking, built-in seating, and professional landscaping.</p>
+                    </div>
+                </div>
+                
+                <div class="work-card">
+                    <div class="work-card-image">
+                        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Office Building Renovation">
+                        <div class="work-category">COMMERCIAL</div>
+                    </div>
+                    <div class="work-card-content">
+                        <h3>Office Building Renovation</h3>
+                        <p>Complete interior overhaul with modern fixtures, energy-efficient systems, and premium finishes.</p>
+                    </div>
+                </div>
+                
+                <div class="work-card">
+                    <div class="work-card-image">
+                        <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Whole House Remodel">
+                        <div class="work-category">RESIDENTIAL</div>
+                    </div>
+                    <div class="work-card-content">
+                        <h3>Whole House Remodel</h3>
+                        <p>Complete transformation of a traditional home into a modern living space with premium features.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">We offer a comprehensive range of interior and exterior construction services</p>
+            </div>
+
+            <div class="services-tabs">
+                <button class="tab-btn active" data-tab="interior">Interior Services</button>
+                <button class="tab-btn" data-tab="exterior">Exterior Services</button>
+            </div>
+
+            <!-- Interior Services -->
+            <div class="services-content active" id="interior">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Doors Installation">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-door-closed"></i>
+                            </div>
+                            <h3 class="service-title">Doors</h3>
+                            <p class="service-desc">Custom interior and exterior door installation and repair.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Custom Cabinets">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-archive"></i>
+                            </div>
+                            <h3 class="service-title">Cabinets</h3>
+                            <p class="service-desc">Custom cabinet design, installation, and refacing for any space.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Flooring Installation">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-th-large"></i>
+                            </div>
+                            <h3 class="service-title">Flooring</h3>
+                            <p class="service-desc">Hardwood, laminate, tile, and vinyl flooring installation.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Structural Framing">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h3 class="service-title">Framing</h3>
+                            <p class="service-desc">Precise structural framing for walls, ceilings, and floors.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Insulation Installation">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-temperature-high"></i>
+                            </div>
+                            <h3 class="service-title">Insulation</h3>
+                            <p class="service-desc">Energy-efficient insulation solutions for maximum comfort.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Kitchen & Bath Remodel">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-sink"></i>
+                            </div>
+                            <h3 class="service-title">Kitchen & Baths</h3>
+                            <p class="service-desc">Complete kitchen and bathroom remodeling and installation.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Custom Molding">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-border-style"></i>
+                            </div>
+                            <h3 class="service-title">Molding</h3>
+                            <p class="service-desc">Custom trim, crown, and baseboard molding installation.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Interior Painting">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-paint-roller"></i>
+                            </div>
+                            <h3 class="service-title">Painting</h3>
+                            <p class="service-desc">Interior and exterior painting with premium quality paints.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1621373917328-c37d0b4c9c5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Drywall Installation">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-border-all"></i>
+                            </div>
+                            <h3 class="service-title">Sheetrock/Drywall</h3>
+                            <p class="service-desc">Professional drywall installation, repair, and finishing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exterior Services -->
+            <div class="services-content" id="exterior">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1567538943357-8d5fa81b859f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Custom Deck Building">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-tree"></i>
+                            </div>
+                            <h3 class="service-title">Decks</h3>
+                            <p class="service-desc">Custom deck design and construction for outdoor living spaces.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Garage Door Installation">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-warehouse"></i>
+                            </div>
+                            <h3 class="service-title">Garage Doors</h3>
+                            <p class="service-desc">Garage door installation, repair, and maintenance services.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Power Washing Service">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-spray-can"></i>
+                            </div>
+                            <h3 class="service-title">Power Washing</h3>
+                            <p class="service-desc">Exterior surface cleaning for decks, siding, driveways, and more.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Exterior Painting">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-paint-roller"></i>
+                            </div>
+                            <h3 class="service-title">Exterior Painting</h3>
+                            <p class="service-desc">Professional exterior painting to protect and beautify your home.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Exterior Door Installation">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-door-closed"></i>
+                            </div>
+                            <h3 class="service-title">Exterior Doors</h3>
+                            <p class="service-desc">Entry door installation and replacement for security and style.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Exterior Framing">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h3 class="service-title">Exterior Framing</h3>
+                            <p class="service-desc">Structural framing for additions, porches, and exterior structures.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Contact us for a free consultation and quote</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@waebuilder.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>123 Construction Ave, Builders City, BC 12345</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Business Hours</h3>
+                            <p>Mon-Fri: 8:00 AM - 6:00 PM</p>
+                            <p>Saturday: 9:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="quoteForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" required>
+                                <option value="" disabled selected>Select Service</option>
+                                <option value="interior">Interior Services</option>
+                                <option value="exterior">Exterior Services</option>
+                                <option value="decks">Decks</option>
+                                <option value="kitchen">Kitchen & Baths</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" placeholder="Project Details" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            <span>Request Quote</span>
+                            <div class="spinner hidden" id="formSpinner"></div>
+                        </button>
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="logo.jpg" alt="WA/E BUILDER INC" class="footer-logo-img">
+            <p class="footer-tagline">PREMIUM CONSTRUCTION SOLUTIONS</p>
+        </div>
+        <div class="footer-links">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#work">WORK</a>
+            <a href="#services">SERVICES</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2023 WA/E BUILDER INC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
