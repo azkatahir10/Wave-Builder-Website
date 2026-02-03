@@ -10,12 +10,20 @@ const submitBtn = document.getElementById('submitBtn');
 const formSpinner = document.getElementById('formSpinner');
 const formMessage = document.getElementById('formMessage');
 
-// WhatsApp Button Functionality
+// WhatsApp Button Functionality - UPDATED
 whatsappBtn.addEventListener('click', function() {
-    const phoneNumber = "+15551234567"; // Replace with actual number
-    const message = "Hello WA/E BUILDER INC, I'm interested in your construction services.";
+    // Correct WhatsApp number format: remove spaces, parentheses, and dashes
+    const phoneNumber = "18322125626"; // Format: country code + number without any symbols
+    const message = "Hello WAVE BUILDER INC, I'm interested in your construction services.";
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    
+    console.log('WhatsApp URL:', url); // For debugging
+    
+    // Open WhatsApp in a new tab
     window.open(url, '_blank');
+    
+    // Alternative method that might work better
+    // window.location.href = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
 });
 
 // Mobile Navigation Toggle
@@ -76,12 +84,12 @@ quoteForm.addEventListener('submit', function(e) {
         phone: phone || 'Not provided',
         service: service,
         message: message,
-        to_email: 'info@waebuilder.com', // Your email address
+        to_email: 'build2waveofficial@gmail.com', // Updated to your email
         date: new Date().toLocaleDateString()
     };
     
-    // Send email using EmailJS
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+    // Send email using EmailJS - UPDATE THESE IDs WITH YOUR ACTUAL IDs
+    emailjs.send('service_qrfx3h5', 'template_p8ag9za', templateParams)
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
             
@@ -236,4 +244,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('2. Create a service and template');
     console.log('3. Update the EmailJS initialization in the HTML head with your Public Key');
     console.log('4. Update the emailjs.send() call in script.js with your Service ID and Template ID');
+    
+    // Add click event to WhatsApp button for testing
+    console.log('WhatsApp button ready. Phone number: 18322125626');
 });

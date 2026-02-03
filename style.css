@@ -117,7 +117,7 @@ body {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    background-color: var(--primary-color);
+    background-color: white; /* Changed from var(--primary-color) to white */
 }
 
 .hero-background {
@@ -201,11 +201,11 @@ body {
     max-width: 400px;
     height: auto;
     object-fit: contain;
-    /* Removed the filter that was making it white */
     background-color: white;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--primary-color); /* Added border for contrast */
 }
 
 .logo-text {
@@ -224,11 +224,11 @@ body {
     font-weight: 300;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--primary-color); /* Changed from rgba(255, 255, 255, 0.8) to blue */
 }
 
 .hero-text-container {
-    color: white;
+    color: var(--primary-color); /* Changed from white to blue */
 }
 
 .hero-text {
@@ -288,13 +288,13 @@ body {
 
 .cta-btn.secondary {
     background-color: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    color: white;
+    border: 2px solid var(--primary-color); /* Changed from rgba(255, 255, 255, 0.5) to blue */
+    color: var(--primary-color); /* Changed from white to blue */
 }
 
 .cta-btn.secondary:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: white;
+    background-color: rgba(10, 35, 66, 0.1); /* Changed from rgba(255, 255, 255, 0.1) */
+    border-color: var(--primary-color); /* Changed from white to blue */
 }
 
 .scroll-indicator {
@@ -303,7 +303,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     font-size: 1.8rem;
-    color: white;
+    color: var(--primary-color); /* Changed from white to blue */
     opacity: 0.7;
     z-index: 2;
     animation: bounce 2s infinite;
